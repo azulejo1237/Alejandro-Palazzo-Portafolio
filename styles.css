@@ -1,0 +1,217 @@
+/* Globales */
+body {
+  background-color: rgb(34, 35, 35);
+}
+/* Navbar */
+.navbar-home {
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.navbar-home ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-content: end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(34, 35, 35);
+}
+
+.navbar-home li {
+  font-size: 1.2em;
+}
+.navbar-home li:hover {
+  transition: all .9s ease-in-out;
+  transform: scale(1.1) !important;
+}
+.navbar-home li a {
+  display: block;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  color: rgb(139, 139, 139);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.navbar-home li a:hover {
+  color: white;
+}
+
+/* informacion cv */
+.contenedor--info-cv {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 5rem;
+  overflow: hidden;
+}
+/* aside1 */
+.contenedor--borde-cv {
+  display: block;
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 1000px;
+  overflow: hidden;
+  background-color: #444;
+  border: 18px solid #444;
+  -webkit-box-shadow: 0 0 25px 0 rgb(0 0 0 / 80%);
+  -moz-box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 25px 0 rgb(0 0 0 / 80%);
+  margin: 3rem 5rem 0 0;
+}
+.contenedor--img-cv {
+  background-image: url(img/foto-cv.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: -18px;
+  bottom: -18px;
+  width: auto;
+  left: -18px;
+  right: -18px;
+  transition: all .9s ease-in-out;
+
+}
+.contenedor--img-cv:hover {
+  transition: all .9s ease-in-out;
+  transform: scale(0.9) !important;
+}
+/* aside2 */
+.contenedor--texto-cv {
+  width: 65vh;
+  margin-top: 5rem;
+  margin-right: 0rem;
+}
+.contenedor--texto-cv__especialidad {
+  font-size: 1rem;
+  color: #aaa;
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.contenedor--texto-cv__titulo {
+  font-size: 3rem;
+  line-height: 56px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.contenedor--texto-cv__texto {
+  font-size: 1rem;
+  color: #aaa;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/* Tecnologias */
+.background--tecnologia {
+  background-color: rgb(98, 0, 255);
+}
+.tecnologias--titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 16vw;
+  padding-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+.contenedor--tecnologias {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2rem;
+}.iconos--redes {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
+.iconos--redes__github,.iconos--redes__linkedin {
+width: 2rem;
+height: 5rem;
+margin-right: 1rem;
+object-fit: contain;
+}
+.iconos--redes__github:hover,.iconos--redes__linkedin:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.8) !important;
+}
+.tecnologias--fondos__img {
+    background-color: rgb(255, 255, 255);
+    border: solid #aaa 0.10rem;
+    border-radius: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+.tecnologias--imagenes {
+  width: 4rem;
+  height: 3.5rem;
+  object-fit: contain;
+}
+.tecnologias--imagenes:hover {
+  width: 4rem;
+  height: 3.5rem;
+  object-fit: contain;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.19) !important;
+}
+/* Media querys */
+@media (max-width: 767px) {
+  .navbar-home ul {
+    display: inline;
+  }
+  .contenedor--borde-cv {
+    margin: 3rem 0rem 0 0;
+  }
+  .contenedor--info-cv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .contenedor--img-cv__main {
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor--texto-cv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .contenedor--texto-cv__texto {
+    margin: 0rem 2rem;
+  }
+  .background--tecnologia {
+    overflow: hidden;
+  }
+  .contenedor--tecnologias {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .iconos--redes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .tecnologias--fondos__img {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1rem;
+    padding: 1.2rem;
+}
+}

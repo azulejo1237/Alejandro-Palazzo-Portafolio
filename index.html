@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Alejandro Palazzo</title>
+    <!-- Logo -->
+    <link rel="shorcut icon" href="img/cv-favicon.png">
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
     <!-- Normalize -->
@@ -20,33 +22,33 @@
 
 </head>
 
-<body>
+<body class="body-vacio">
     <div id="sobre-mi"></div>
     <!-- Navbar -->
     <nav class="navbar-home">
         <ul>
-            <li data-aos="fade-left"><a href="#sobre-mi">Sobre mi</a></li>
-            <li data-aos="fade-left"><a href="#Conocimientos">Conocimientos</a></li>
+            <li data-aos="fade-left"><a class="navbar-link" href="#sobre-mi">Sobre mi</a></li>
+            <li data-aos="fade-left"><a class="navbar-link" href="#Conocimientos">Conocimientos</a></li>
+            <li id="bwhite"><img id="boton-mode" src="img/mode-boton.png" alt="Cambiar fondo"></li>
             <!-- <li><a href="">Proyectos</a></li>
             <li><a href="">Contacto</a></li> -->
         </ul>
     </nav>
-
     <!-- Sobre mi -->
-    <aside class="contenedor--info-cv">
-        <div class="contenedor--img-cv__main" data-aos="zoom-out">
+    <section id="contenedor--info-cv">
+        <aside class="contenedor--img-cv__main" data-aos="zoom-out">
             <div class="contenedor--borde-cv">
                 <div class="contenedor--img-cv"></div>
             </div>
-        </div>
-        <div class="contenedor--texto-cv">
-            <h4 class="contenedor--texto-cv__especialidad" data-aos="fade-left">Frontend-developer</h4>
-            <h1 class="contenedor--texto-cv__titulo" data-aos="fade-left">Alejandro Palazzo</h1>
-            <h1 class="contenedor--texto-cv__texto" data-aos="fade-left">Ayudaba a mi papá con la reparación de aires
+        </aside>
+        <main class="contenedor--texto-cv">
+            <h4 id="contenedor--texto-cv__especialidad" data-aos="fade-left">Frontend-developer</h4>
+            <h1 id="contenedorTextoCvTitulo" data-aos="fade-left">Alejandro Palazzo</h1>
+            <h1 id="contenedor--texto-cv__texto" data-aos="fade-left">Ayudaba a mi papá con la reparación de aires
                 acondicionados y
                 lavarropas, Hasta que decidí comenzar a estudiar Desarrollo Web con el objetivo de ser un FrontEnd
                 Developer.</h1>
-            <div class="iconos--redes">
+            <div id="iconos--redes">
                 <a href="https://github.com/azulejo1237" target="_blank">
                     <img class="iconos--redes__github" src="img/logos/github.png" alt="Logo de github"
                         data-aos="fade-left">
@@ -56,38 +58,41 @@
                         data-aos="fade-left">
                 </a>
             </div>
-        </div>
-    </aside>
+        </main>
+    </section>
+
     <div id="Conocimientos"></div>
 
-    <div class="background--tecnologia">
+    <section class="background--tecnologia">
         <h2 class="tecnologias--titulo" data-aos="zoom-in">Conocimientos</h2>
         <div class="contenedor--tecnologias">
-            <div class="tecnologias--fondos__img" data-aos="zoom-in">
+            <article class="tecnologias--fondos__img" data-aos="zoom-in">
                 <img class="tecnologias--imagenes" src="img/logos/html-5.png" alt="logo de html 5">
-            </div>
-            <div class="tecnologias--fondos__img" data-aos="zoom-in">
+            </article>
+            <article class="tecnologias--fondos__img" data-aos="zoom-in">
                 <img class="tecnologias--imagenes" src="img/logos/css-3.png" alt="logo de css">
-            </div>
-            <div class="tecnologias--fondos__img" data-aos="zoom-in">
+            </article>
+            <article class="tecnologias--fondos__img" data-aos="zoom-in">
                 <img class="tecnologias--imagenes" src="img/logos/javascript.png" alt="logo de javascript">
-            </div>
-            <div class="tecnologias--fondos__img" data-aos="zoom-in">
+            </article>
+            <article class="tecnologias--fondos__img" data-aos="zoom-in">
                 <img class="tecnologias--imagenes" src="img/logos/Bootstrap_logo.svg" alt="logo bootstrap">
-            </div>
-            <div class="tecnologias--fondos__img" data-aos="zoom-in">
+            </article>
+            <article class="tecnologias--fondos__img" data-aos="zoom-in">
                 <img class="tecnologias--imagenes" src="img/logos/sass.png" alt="logo de sass">
-            </div>
-            <div class="tecnologias--fondos__img" data-aos="zoom-in">
+            </article>
+            <article class="tecnologias--fondos__img" data-aos="zoom-in">
                 <img class="tecnologias--imagenes" src="img/logos/github.png" alt="logo de github">
-            </div>
+            </article>
         </div>
-    </div>
+    </section>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <!-- JS -->
+    <script src="main.js"></script>
 </body>
- 
+
 </html>

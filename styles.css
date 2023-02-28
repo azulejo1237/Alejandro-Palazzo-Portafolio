@@ -2,6 +2,13 @@
 body {
   background-color: rgb(34, 35, 35);
 }
+/* White Mode */
+body.whitemode {
+  background-color: white;
+}
+#contenedorTextoCvTitulo__whiteMode {
+  color: rgb(0, 0, 0);
+}
 /* Navbar */
 .navbar-home {
   margin-top: 1rem;
@@ -16,7 +23,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(34, 35, 35);
 }
 
 .navbar-home li {
@@ -26,7 +32,7 @@ body {
   transition: all .9s ease-in-out;
   transform: scale(1.1) !important;
 }
-.navbar-home li a {
+.navbar-link {
   display: block;
   text-align: center;
   padding: 1em 1em;
@@ -35,17 +41,27 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-.navbar-home li a:hover {
+.navbar-link:hover {
   color: white;
+}
+#boton-mode {
+  filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(153deg) brightness(105%) contrast(102%);
+  width: 3rem;
+  margin-top: 0.5rem;
+  margin-left: 5rem;
+  margin-right: 1.5rem;
 }
 
 /* informacion cv */
-.contenedor--info-cv {
+#contenedor--info-cv {
   display: flex;
   justify-content: center;
   flex-direction: row;
   margin-top: 5rem;
   overflow: hidden;
+  background-color: rgba(98, 0, 255, 0.041);
+  width: 85%;
+  border-radius: 0% 50% 50% 0% / 100% 100% 100% 0% ;
 }
 /* aside1 */
 .contenedor--borde-cv {
@@ -88,7 +104,7 @@ body {
   margin-top: 5rem;
   margin-right: 0rem;
 }
-.contenedor--texto-cv__especialidad {
+#contenedor--texto-cv__especialidad {
   font-size: 1rem;
   color: #aaa;
   font-weight: 300;
@@ -96,7 +112,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
-.contenedor--texto-cv__titulo {
+#contenedorTextoCvTitulo {
   font-size: 3rem;
   line-height: 56px;
   margin-top: 0;
@@ -105,7 +121,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
-.contenedor--texto-cv__texto {
+#contenedor--texto-cv__texto {
   font-size: 1rem;
   color: #aaa;
   font-family: "Poppins", sans-serif;
@@ -133,10 +149,11 @@ body {
   flex-direction: row;
   align-items: center;
   padding-bottom: 2rem;
-}.iconos--redes {
+}#iconos--redes {
   display: flex;
   justify-content: start;
   flex-direction: row;
+  filter: invert(94%) sepia(94%) saturate(0%) hue-rotate(153deg) brightness(105%) contrast(102%);
 }
 .iconos--redes__github,.iconos--redes__linkedin {
 width: 2rem;
@@ -176,10 +193,12 @@ object-fit: contain;
   .contenedor--borde-cv {
     margin: 3rem 0rem 0 0;
   }
-  .contenedor--info-cv {
+  #contenedor--info-cv {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    border-radius: 0% ;
   }
   .contenedor--img-cv__main {
     display: flex;
@@ -192,7 +211,7 @@ object-fit: contain;
     justify-content: center;
     text-align: center;
   }
-  .contenedor--texto-cv__texto {
+  #contenedor--texto-cv__texto {
     margin: 0rem 2rem;
   }
   .background--tecnologia {
@@ -203,7 +222,7 @@ object-fit: contain;
     justify-content: center;
     flex-direction: column;
   }
-  .iconos--redes {
+  #iconos--redes {
     display: flex;
     justify-content: center;
     flex-direction: column;

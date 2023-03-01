@@ -23,19 +23,18 @@
 </head>
 
 <body class="body-vacio">
-    <div id="sobre-mi"></div>
     <!-- Navbar -->
     <nav class="navbar-home">
         <ul>
             <li data-aos="fade-left"><a class="navbar-link" href="#sobre-mi">Sobre mi</a></li>
-            <li data-aos="fade-left"><a class="navbar-link" href="#Conocimientos">Conocimientos</a></li>
+            <li data-aos="fade-left"><a class="navbar-link" href="#background--tecnologia">Habilidades</a></li>
+            <li data-aos="fade-left"><a class="navbar-link" href="#proyectos">Proyectos</a></li>
             <li id="bwhite"><img id="boton-mode" src="img/mode-boton.png" alt="Cambiar fondo"></li>
-            <!-- <li><a href="">Proyectos</a></li>
-            <li><a href="">Contacto</a></li> -->
+            <!-- <li><a href="">Contacto</a></li> -->
         </ul>
     </nav>
     <!-- Sobre mi -->
-    <section id="contenedor--info-cv">
+    <section id="contenedor--info-cv" id="sobre-mi">
         <aside class="contenedor--img-cv__main" data-aos="zoom-out">
             <div class="contenedor--borde-cv">
                 <div class="contenedor--img-cv"></div>
@@ -57,14 +56,14 @@
                     <img class="iconos--redes__linkedin" src="img/logos/linkedin.png" alt="Logo de linkedin"
                         data-aos="fade-left">
                 </a>
+                <a class="descargar-cv--boton" href="CV-Alejandro-Palazzo.pdf" data-aos="fade-left"
+                    download="Alejandro Palazzo - CV.pdf">Descargar CV</a>
             </div>
         </main>
     </section>
 
-    <div id="Conocimientos"></div>
-
-    <section class="background--tecnologia">
-        <h2 class="tecnologias--titulo" data-aos="zoom-in">Conocimientos</h2>
+    <section id="background--tecnologia">
+        <h2 id="tecnologias--titulo" data-aos="zoom-in">Habilidades</h2>
         <div class="contenedor--tecnologias">
             <article class="tecnologias--fondos__img" data-aos="zoom-in">
                 <img class="tecnologias--imagenes" src="img/logos/html-5.png" alt="logo de html 5">
@@ -83,6 +82,37 @@
             </article>
             <article class="tecnologias--fondos__img" data-aos="zoom-in">
                 <img class="tecnologias--imagenes" src="img/logos/github.png" alt="logo de github">
+            </article>
+        </div>
+    </section>
+
+    <section class="background--proyectos" id="proyectos">
+        <h2 id="proyectos--titulo">Proyectos</h2>
+        <div class="contenedor--proyectos">
+            <article class="proyecto--contenido">
+                <a href="https://azulejo1237.github.io/Crypto-Wallet/" target="_blank">
+                    <img class="imagenes--proyecto" src="img/proyectos/crypto-wallet.png" alt="Crypto Wallet">
+                    <div class="info-proyectos">
+                        <h4>Crypto Wallet</h4>
+                    </div>
+                </a>
+            </article>
+            <article class="proyecto--contenido">
+                <a href="https://azulejo1237.github.io/JavaScript-Coder/" target="_blank">
+                    <img class="imagenes--proyecto" src="img/proyectos/Tienda de componentes.png"
+                        alt="Tienda de componentes">
+                    <div class="info-proyectos">
+                        <h4>Tienda de componentes</h4>
+                    </div>
+                </a>
+            </article>
+            <article class="proyecto--contenido">
+                <a href="https://azulejo1237.github.io/Pizzeria-Palazzo/" target="_blank">
+                    <img class="imagenes--proyecto" src="img/proyectos/Pizzeria.png" alt="Pizzeria">
+                    <div class="info-proyectos">
+                        <h4>Pizzeria</h4>
+                    </div>
+                </a>
             </article>
         </div>
     </section>
